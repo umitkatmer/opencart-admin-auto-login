@@ -19,7 +19,6 @@ $dataloginjson = array(
 "user_id"   => $this->session->data['user_id']
 );
 
-//$dataloginjson = json_encode($dataloginjson);
 $dataloginjson = base64_encode(serialize($dataloginjson));
 
 setcookie("customer_autologin_cookie", "".$dataloginjson."" , time()+(24*60*60) , "/");
