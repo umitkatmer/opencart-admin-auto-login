@@ -1,6 +1,7 @@
 # opencart-admin-auto-login
 Admin Panel e gün içinde bir kere giriş yaptıktan sonra otomatik olarak giriş yapabilmeyi sağlar
 
+<h3 id="not">Tarayıcıdaki relam engelleyen eklentiler çalışmasını engellemektedir.Bunun dışında bir hata ile karşılaşılmadı.</h3>
 
 <h3 id="isleyis">Admin > Controller > Common > login.php</h3>
 
