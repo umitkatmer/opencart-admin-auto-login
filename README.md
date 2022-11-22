@@ -3,7 +3,7 @@ Admin Panel e gün içinde bir kere giriş yaptıktan sonra otomatik olarak giri
 
 <h3 id="not">Opencart 3x için OCMOD şeklinde eklenti de eklidir, İndirip Kurabilirsiniz.</h3>
 
-<h3 id="not">Tarayıcıdaki relam engelleyen eklentiler çalışmasını engellemektedir.</h3>
+<h5 id="not" >Reklam engelleyen tarayıcı eklentileri tarayıcıda tuttuğumuz dataları silmekte veya engellemektedir. Kapatmanız veya ADGUARD kullanabilirsiniz.</h5>
 
 <h3 id="isleyis">Admin > Controller > Common > login.php</h3>
 
