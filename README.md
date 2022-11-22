@@ -1,6 +1,8 @@
 # opencart-admin-auto-login
 Admin Panel e gün içinde bir kere giriş yaptıktan sonra otomatik olarak giriş yapabilmeyi sağlar
 
+<h3 id="not">Opencart 3x için OCMOD şeklinde eklenti de eklidir, İndirip Kurabilirsiniz.</h3>
+
 <h3 id="not">Tarayıcıdaki relam engelleyen eklentiler çalışmasını engellemektedir.</h3>
 
 <h3 id="isleyis">Admin > Controller > Common > login.php</h3>
