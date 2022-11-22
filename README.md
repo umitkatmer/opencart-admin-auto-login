@@ -4,6 +4,8 @@ Admin Panel e gün içinde bir kere giriş yaptıktan sonra otomatik olarak giri
 
 <h3 id="isleyis">Admin > Controller > Common > login.php</h3>
 ```php
+
+<?php
 //admin controller common login.php
 // $this->response->redirect($this->request->post['redirect'] . '&user_token=' . $this->session->data['user_token']); 
 // yukarıdaki koddan önce eklenmelidir.
@@ -19,4 +21,5 @@ $dataloginjson = array(
 $dataloginjson = base64_encode(serialize($dataloginjson));
 
 setcookie("customer_autologin_cookie", "".$dataloginjson."" , time()+(24*60*60) , "/");
+?>
 ```
