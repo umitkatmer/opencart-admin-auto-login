@@ -33,27 +33,28 @@ setcookie("customer_autologin_cookie", "".$dataloginjson."" , time()+(24*60*60) 
 // public function index() {
 // yukarıdaki koddan sonra eklenmelidir.
 
-		if(isset($_COOKIE["customer_autologin_cookie"])){  
-			
-			if(!isset($this->session->data['logins'])){  
-				
-				$customer_autologin_cookie = unserialize(base64_decode($_COOKIE["customer_autologin_cookie"]));
-				$username                  = $customer_autologin_cookie['username'];
-				$password                  = $customer_autologin_cookie['password'];
-				
-				$loginpanel = $this->user->login($username, html_entity_decode($password, ENT_QUOTES, 'UTF-8'));
-				
-				if($loginpanel){
-					
-					$this->session->data['user_token'] = token(32);
-					$this->session->data['logins'] = 1;
-					$this->session->data['token'] =  $this->session->data['user_token'];
-					$this->response->redirect($this->url->link('common/dashboard', 'user_token=' . $this->session->data['user_token'].'', true));
-							
-				}
-				
-			}
+if(isset($_COOKIE["customer_autologin_cookie"])){  
+	
+     if(!isset($this->session->data['logins'])){  
 		
-		}
+	$customer_autologin_cookie = unserialize(base64_decode($_COOKIE["customer_autologin_cookie"]));
+	$username                  = $customer_autologin_cookie['username'];
+	$password                  = $customer_autologin_cookie['password'];
+
+	$loginpanel = $this->user->login($username, html_entity_decode($password, ENT_QUOTES, 'UTF-8'));
+
+	if($loginpanel){
+
+		$this->session->data['user_token'] = token(32);
+		$this->session->data['logins'] = 1;
+		$this->session->data['token'] =  $this->session->data['user_token'];
+		$this->response->redirect($this->url->link('common/dashboard', 'user_token=' . $this->session->data['user_token'].'', true));
+
+	}
+		
+     }
+
+}
+
 ?>
 ```
