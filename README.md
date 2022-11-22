@@ -3,6 +3,7 @@ Admin Panel e gün içinde bir kere giriş yaptıktan sonra otomatik olarak giri
 
 
 <h3 id="isleyis">Admin > Controller > Common > login.php</h3>
+
 ```php
 
 <?php
